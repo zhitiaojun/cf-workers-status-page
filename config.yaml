@@ -5,35 +5,41 @@ settings:
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
+  allmonitorsOperational: '所有系统正常运行'
+  notAllmonitorsOperational: '部分系统离线'
+  monitorLabelOperational: '正常运行'
+  monitorLabelNotOperational: '离线'
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  dayInHistogramOperational: '一切正常'
+  dayInHistogramNotOperational: ' 部分检查失败' # xx incident(s) recorded
 
 monitors:
   - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
     url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
+    method: GET # default=GET# default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
   - id: www-cloudflare-com
     name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
     url: 'https://www.cloudflare.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: alist-cwlindean-top
+    name: alist
+    url: 'https://alist.cwlindean.top/'
     method: GET
     expectStatus: 200
+    linkable: false
+
+  - id: page-cwlindean-top
+    name: page
+    url: 'https://page.cwlindean.top/'
+    method: GET
+    expectStatus: 200
+    linkable: false
