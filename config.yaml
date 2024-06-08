@@ -15,7 +15,20 @@ settings:
   dayInHistogramNotOperational: ' 部分检查失败' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
+  - id: alist-cwlindean-top
+    name: alist
+    url: 'https://alist.hoshino123.eu.org:52199/'
+    method: GET
+    expectStatus: 200
+    linkable: false
+
+  - id: page-cwlindean-top
+    name: page
+    url: 'https://page.cwlindean.top/'
+    method: GET
+    expectStatus: 200
+    linkable: false
+    - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
     url: 'https://workers.cloudflare.com/' # URL to fetch
     method: GET # default=GET# default=GET
@@ -29,17 +42,4 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
-
-  - id: alist-cwlindean-top
-    name: alist
-    url: 'https://alist.cwlindean.top/'
-    method: GET
-    expectStatus: 200
-    linkable: false
-
-  - id: page-cwlindean-top
-    name: page
-    url: 'https://page.cwlindean.top/'
-    method: GET
-    expectStatus: 200
-    linkable: false
+    
