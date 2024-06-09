@@ -16,18 +16,18 @@ settings:
 
 monitors:
   - id: alist-cwlindean-top
-    name: alists
+    name: cdn.hoshino123.eu.org
     url: 'https://alist.hoshino123.eu.org:52199'
     method: GET
-    expectStatus: 200
-    linkable: false
+    expectStatus: 200 
+    linkable: true 
 
   - id: page-cwlindean-top
-    name: page
+    name: page.cwlindean.top
     url: 'https://page.cwlindean.top/'
     method: GET
-    expectStatus: 200
-    linkable: false
+    expectStatus: 200 
+    linkable: false 
     
     - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
