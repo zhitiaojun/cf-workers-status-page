@@ -19,28 +19,13 @@ monitors:
     name: cdn.hoshino123.eu.org
     url: 'https://alist.hoshino123.eu.org:52199'
     method: GET
-    expectStatus: 200 
-    linkable: true 
+    expectStatus: 200
+    linkable: true
 
   - id: page-cwlindean-top
     name: page.cwlindean.top
     url: 'https://page.cwlindean.top/'
     method: GET
-    expectStatus: 200 
-    linkable: false 
-    
-    - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET# default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    url: 'https://www.cloudflare.com'
-    method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false
     
