@@ -15,14 +15,14 @@ settings:
   dayInHistogramNotOperational: ' 部分检查失败' # xx incident(s) recorded
 
 monitors:
-  - id: alist-cwlindean-top
+  - id: alist
     name: cdn.hoshino123.eu.org
     url: 'https://alist.hoshino123.eu.org:52199'
     method: GET
     expectStatus: 200
     linkable: true
 
-  - id: page-cwlindean-top
+  - id: page
     name: page.cwlindean.top
     url: 'https://page.cwlindean.top/'
     method: GET
