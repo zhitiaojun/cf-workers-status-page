@@ -20,7 +20,7 @@ monitors:
     url: 'https://alist.hoshino123.eu.org:52199'
     method: GET
     expectStatus: 200
-    linkable: true
+    linkable: false
 
   - id: page
     name: page.cwlindean.top
@@ -31,8 +31,8 @@ monitors:
 
   - id: zcloud
     name: one.hoshino123.eu.org
-    url: 'http://128.204.223.46:52100'
+    url: 'https://one.hoshino123.eu.org/'
     method: GET
     expectStatus: 200
-    linkable: true
+    linkable: false
     
