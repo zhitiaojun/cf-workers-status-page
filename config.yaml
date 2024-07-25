@@ -17,22 +17,15 @@ settings:
 monitors:
   - id: alist
     name: cdn.hoshino123.eu.org
-    url: 'https://alist.hoshino123.eu.org:52199'
+    url: 'https://cdn.hoshino123.eu.org/'
     method: GET
     expectStatus: 200
-    linkable: false
+    linkable: true
 
   - id: page
     name: page.cwlindean.top
     url: 'https://page.cwlindean.top/'
     method: GET
     expectStatus: 200
-    linkable: false
-
-  - id: zcloud
-    name: one.hoshino123.eu.org
-    url: 'https://one.cwlindean.top/'
-    method: GET
-    expectStatus: 200
-    linkable: false
+    linkable: true
     
